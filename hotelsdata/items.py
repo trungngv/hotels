@@ -7,7 +7,6 @@
 
 import scrapy
 
-
 class Hotel(scrapy.Item):
   effectiveDate = scrapy.Field()
   name = scrapy.Field()
@@ -23,4 +22,9 @@ class Hotel(scrapy.Item):
   roomCapacity = scrapy.Field()
   totalReviews = scrapy.Field()
   avgReviewScore = scrapy.Field()
-  guestNationalities = scrapy.Field()
+  topNationNames = scrapy.Field()
+  topNationCounts = scrapy.Field()
+
+class UrlList(scrapy.Item):
+  effectiveDate = scrapy.Field()
+  urls = scrapy.Field()
